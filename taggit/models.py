@@ -108,7 +108,7 @@ class TaggedItemBase(ItemBase):
 
 
 class GenericTaggedItemBase(ItemBase):
-    object_id = models.IntegerField(verbose_name=_('Object id'), db_index=True)
+    object_id = models.BigIntegerField(verbose_name=_('Object id'), db_index=True)
     content_type = models.ForeignKey(
         ContentType,
         verbose_name=_('Content type'),
